@@ -1,0 +1,15 @@
+{
+    "name": "nodejs-weboldal",
+    "version": "1.0.0",
+    "description": "Ez egy Node.js weboldalhoz.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "Kozsup Krisztián",
+    "license": "valami",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  

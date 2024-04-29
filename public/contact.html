@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapcsolat - Utazás Argentínában</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <img src="images/header.jpg" alt="Argentína" class="header-image">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Utazás Argentínában</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Videó</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="main-content container mt-4">
+        <h1 class="text-center">Kapcsolat</h1>
+        <div id="success-message" class="text-success"></div>
+        <form id="contaction-form">
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <div id="error-messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control">
+                <div id="error-messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" class="form-control" rows="5"></textarea>
+                <div id="error-messages"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Úti cél:</label>
+                <select id="destination" name="destination" class="form-control">
+                    <option value="" disabled selected>Kérjük, válasszon...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Iguazu-vízesés">Iguazu-vízesés</option>
+                    <option value="Patagónia">Patagónia</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Ushuaia">Ushuaia</option>
+                    <div id="error-messages"></div>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interests">Érdeklődési kör:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interest1" name="interests" value="Történelem">
+                    <label class="form-check-label" for="interest1">Történelem</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interest2" name="interests" value="Természet">
+                    <label class="form-check-label" for="interest2">Természet</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interest3" name="interests" value="Gasztronómia">
+                    <label class="form-check-label" for="interest3">Gasztronómia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interest4" name="interests" value="Kultúra">
+                    <label class="form-check-label" for="interest4">Kultúra</label>
+                </div>
+                <div id="error-messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="travelDate">Utazás dátuma:</label>
+                <input type="date" id="travelDate" name="travelDate" class="form-control">
+                <div id="error-messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="numberOfTravelers">Utazók száma:</label>
+                <input type="number" id="numberOfTravelers" name="numberOfTravelers" class="form-control" min="1" max="10">
+                <div id="error-messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="colorPicker">Utazáshoz járó ingyen poló szine:</label>
+                <input type="color" id="colorPicker" name="colorPicker" class="form-control">
+                <div id="error-messages"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="sumbit">Küldés</button>
+            
+        </form>
+        
+        
+        <!--<div id="error-messages"></div>  Hibaüzenetek helye -->
+        <!-- <div id="success-message"></div> Sikeres küldés üzenete -->
+    </section>
+    <footer class="bg-dark text-white mt-4 py-3">
+        <div class="container">
+            <p class="mb-0" style="text-align: center;">&copy; 2024 Utazás Argentínában</p>
+        </div>
+    </footer>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
