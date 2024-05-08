@@ -62,15 +62,14 @@
 
             <div class="form-group">
                 <label for="destination">Úti cél:</label>
-                <select id="destination" name="destination" class="form-control">
-                    <option value="" disabled selected>Kérjük, válasszon...</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Iguazu-vízesés">Iguazu-vízesés</option>
-                    <option value="Patagónia">Patagónia</option>
-                    <option value="Mendoza">Mendoza</option>
-                    <option value="Ushuaia">Ushuaia</option>
-                    <div id="error-messages"></div>
-                </select>
+                <input list="destinations" id="destination" name="destination" class="form-control" placeholder="Kérjük, válasszon...">
+                <datalist id="destinations">
+                    <option value="Buenos Aires">
+                    <option value="Iguazu-vízesés">
+                    <option value="Patagónia">
+                    <option value="Mendoza">
+                    <option value="Ushuaia">
+                </datalist>
             </div>
             <div class="form-group">
                 <label for="interests">Érdeklődési kör:</label>
