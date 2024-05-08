@@ -106,18 +106,5 @@ footer {
     }
 }
 
-.text-danger {
-    color: #dc3545; /* Bootstrap piros színe */
-}
-
-.text-success {
-    color: #28a745; /* Bootstrap zöld színe */
-}
-
-#success-message {
-    /* Add meg a megfelelő stílust az üzenet megjelenítéséhez */
-    color: green;
-    font-weight: bold;
-}
 
 
